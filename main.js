@@ -33,7 +33,7 @@ setTimeout(() => {
             repeatedCfgPart += `alias "${commandSubName}${phraseID}" "say ${phrasesList[phraseID]}; alias ${commandName} ${commandSubName}0"\n`;
         }
     }
-    wholeCfg = `bind "${key}" "${commandName}"\nalias "${commandName}" "${commandSubName}0"` + repeatedCfgPart;
+    wholeCfg = `bind "${key}" "${commandName}"\nalias "${commandName}" "${commandSubName}0"\n` + repeatedCfgPart;
     console.log(phrasesList);
     console.log(typeof(phrasesList));
     console.log(wholeCfg);
